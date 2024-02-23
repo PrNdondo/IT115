@@ -1,14 +1,19 @@
 name: Hello World
 # Events
 on:
+
   push:
     branches:
       - main
+      
   pull_request:
     branches:
       - main
+      
   workflow_dispatch:
+  
   # workflow / jobs
+  
   jobs:
     hello:
       runs-on: ubuntu-latest
